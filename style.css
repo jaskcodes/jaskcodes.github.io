@@ -30,6 +30,29 @@ section {
     margin: 0 15%;
 }
 
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-card img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
 footer {
     background-color: #333;
     color: white;
