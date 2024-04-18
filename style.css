@@ -4,91 +4,106 @@ body {
     padding: 0;
     color: #333;
     background-color: #f9f9f9; /* Soft off-white background */
+    line-height: 1.6;
 }
 
 header {
-    background-color: #eaeaea; /* Soft gray header background */
-    color: #333; /* Dark gray text */
-    padding: 10px 20px;
+    background-color: #f0f0f0; /* Lighter header background */
+    color: #202020; /* Richer text color for contrast */
+    padding: 1.2em 0; /* Increase padding for better spacing */
     text-align: center;
 }
 
 header h1 {
-    font-weight: normal;
+    font-size: 2em; /* Larger font size for the main title */
+    font-weight: 300; /* Lighter font weight for a modern look */
 }
 
 nav a {
-    color: #333; /* Dark gray text */
+    color: #333;
     text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
+    margin: 0 1em;
+    padding: 0.5em 1em;
     transition: color 0.3s ease;
 }
 
-nav a:hover {
-    color: #007bff; /* Soft blue for hover state */
+nav a:hover, nav a:focus {
+    color: #007bff;
+    text-decoration: none; /* Remove underline on hover/focus */
 }
 
 section {
-    padding: 20px;
-    margin: 0 15%;
+    padding: 2em 10%; /* Increased padding for better spacing */
+    text-align: center; /* Center aligning text */
 }
 
 section h2 {
-    color: #007bff; /* Soft blue for section titles */
-    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 1.75em; /* Larger font size for section titles */
+    margin-bottom: 1em;
 }
 
 .project-card {
     background-color: #fff;
     border: none;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    padding: 2em; /* More padding inside the cards */
+    margin: 1em 0; /* More space between cards */
+    border-radius: 10px; /* Rounded corners for modern look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the content */
     transition: box-shadow 0.3s ease-in-out;
 }
 
 .project-card img {
-    width: 150px; /* Increased image size for better visibility */
+    width: 80%; /* Larger images */
+    max-width: 400px; /* Maximum size */
     height: auto;
-    margin-right: 15px;
-    border-radius: 4px;
+    margin-bottom: 1em;
+    border-radius: 10px; /* Rounded corners for images */
 }
 
 .project-card:hover {
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .project-card h3 {
-    color: #333; /* Dark gray text */
-    margin-top: 0;
+    color: #333;
+    font-size: 1.5em; /* Larger font size for project titles */
 }
 
 .project-card p {
-    color: #666; /* Lighter text for the paragraph */
+    color: #666;
+    font-size: 1em; /* Adjusted font size for paragraph */
 }
 
 footer {
     background-color: #333;
-    color: white;
+    color: #f1f1f1;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
+    padding: 1.2em;
+    position: relative; /* Change to relative positioning */
     width: 100%;
+    bottom: 0;
 }
 
 footer a {
-    color: #999; /* Lighter text links for footer */
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+footer a:hover, footer a:focus {
+    color: #fff;
     text-decoration: none;
 }
 
-footer a:hover {
-    color: #fff; /* White text for hover state */
+@media screen and (min-width: 768px) {
+    .project-card {
+        flex-direction: row; /* Side-by-side layout on larger screens */
+    }
+    .project-card img {
+        width: 30%; /* Adjust the size on larger screens */
+        margin-right: 2em; /* Add margin between image and text */
+    }
 }
-
-/* Responsive tweaks can be placed here */
-
